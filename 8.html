@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Table</title>
+</head>
+<style>
+    table , td, th { 
+      border: 1px solid #595959;
+     border-collapse: collapse; 
+     margin: 50px auto;
+            padding: 10px;
+        border: 1px solid black;
+        width: 60%;
+       
+     
+     } 
+     td, th {
+       padding: 10px; width: 500px; height: 25px;border-width: 2px; 
+       } 
+       th {
+         background: #ffffff;
+          
+         } 
+         .even { 
+          background: #fbf8f0; 
+          } 
+          .odd { 
+            background: #fefcf9; 
+            }
+            .tbody1{
+                font-size: medium;
+                
+            }
+</style>
+
+<body>
+    <table class="table1">
+        <thead>
+            <tr>
+                
+                <th>Customer</th>
+                <th colspan="3">Items</th>
+                <th colspan="4">Payments</th>
+                
+            </tr>
+        </thead>
+        <tbody class="tbody1">
+            <tr>
+                <td rowspan="4">Customer Name</td>
+                <td>Item1</td>
+                <td>5</td>
+                <td>$400.00</td>
+                <td rowspan="2" >12 Sep 2018<br><br>  </td>
+                <td rowspan="2" >$3,000.00</td>
+            </tr>
+
+            <tr>
+
+                <td rowspan="2">Item2</td>
+                <td rowspan="2">10</td>
+                <td rowspan="2">$200.00</td>
+                <!-- <td rowspan="2"></td> -->
+            </tr>
+            <tr>
+                <td rowspan="2">18 Sep 2018</td>
+                <td rowspan="2">$2,000.00</td>
+            </tr>
+            <tr> <td >Item3</td>
+                <td>2</td>
+                <td>$500.00</td>
+                </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aadhar Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 350px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 50px auto;
+            padding: 20px;
+            position: relative;
+        }
+        .header img {
+            width: 100%;
+        }
+        .image {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .image img {
+            width: 85px;
+            height: 85px;
+            border-radius: 60%;
+            margin-right: 20px;
+        }
+        .image span {
+            font-size: 18px;
+        }
+        .info {
+            margin-top: 1px;
+            margin-bottom: 1px; /* Add margin bottom to create space for the barcode */
+        }
+        .info span {
+            display: block;
+            margin-bottom: 1px;
+            font-size: small;
+        }
+        .aadhar-number {
+            margin-top: 20px;
+            font-size: 24px;
+            text-align: center;
+            border-bottom: 2px solid red; /* Add red line under Aadhar number */
+            padding-bottom: 10px; /* Add padding to space out the line from the Aadhar number */
+        }
+        .barcode {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 100px;
+            height: 100px;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="aadharhead.jpeg" alt="Aadhar Header">
+        </div>
+        <div class="image">
+            <img src="pic.png" alt="User Photo">
+            <div class="info">
+                <span><strong>Kirubavathi U</strong></span>
+                <span><Strong>DOB: </Strong>01/06/2002</span>
+                <span><Strong>Address: </Strong>Vaniyambadi,Vellore-600 053</span>
+                <span><Strong>Phone.No:</Strong>6369929201</span>
+            </div>
+        </div>
+        <img src="Qr Code.jpeg" alt="barcode" class="barcode">
+        <div class="aadhar-number">
+            4232 8867 9462
+        </div>
+    </div>
+</body>
+</html>
